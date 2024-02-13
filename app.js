@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 
 require('dotenv').config()
+require('express-async-errors')
 
 const connectDB = require('./db/connection')
 app.use(express.json())
